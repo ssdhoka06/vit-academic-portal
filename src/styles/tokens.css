@@ -1,0 +1,67 @@
+/**
+ * Design tokens — v2
+ * ---------------------------------------------------------------------------
+ * A quieter, institutional palette: near-neutral graphite ink and paper,
+ * one deep academic blue carrying authority (nav, links, primary actions),
+ * and a single muted brass accent used sparingly for emphasis (active
+ * states, seals) rather than as a decorative color. No saturated hues, no
+ * heavy gradients — depth comes from hairline borders and very soft shadows.
+ *
+ * Type: Source Serif 4 appears once, in the hero headline, for institutional
+ * weight — everywhere else (nav, cards, buttons, body) runs on Inter, the
+ * grotesk favoured by Linear/Notion/Atlassian-style enterprise dashboards,
+ * so the portal reads as scannable software rather than a marketing page.
+ * IBM Plex Mono carries codes, dates and figures — the "printed record".
+ * ---------------------------------------------------------------------------
+ */
+:root {
+  /* Ink & paper */
+  --ink: #14181F;
+  --ink-soft: #333A44;
+  --paper: #F6F7F8;
+  --surface: #FFFFFF;
+  --surface-muted: #F0F1F3;
+  --border: #E2E4E8;
+  --border-strong: #CCD0D6;
+  --muted: #5B6572;
+  --muted-2: #8B93A0;
+
+  /* Brand — deep academic blue */
+  --brand-950: #0A121D;
+  --brand-900: #101B2B;
+  --brand-800: #16283E;
+  --brand-700: #1D3552;
+  --brand-600: #2A4A70;
+  --brand-500: #3B6390;
+  --brand-100: #E7EDF3;
+
+  /* Accent — muted brass, used sparingly */
+  --accent-700: #8A6A26;
+  --accent-600: #9C7A2E;
+  --accent-500: #AD8B3F;
+  --accent-100: #F3ECDA;
+
+  /* Status — desaturated semantic colors */
+  --status-not-started: #9399A3;
+  --status-in-progress: #3B6390;
+  --status-under-review: #9C7A2E;
+  --status-completed: #3F7A5C;
+
+  /* Type */
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadow — quiet, almost-flat depth */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 38, 0.05);
+  --shadow-sm: 0 1px 2px rgba(16, 24, 38, 0.05), 0 2px 6px rgba(16, 24, 38, 0.04);
+  --shadow-md: 0 4px 16px rgba(16, 24, 38, 0.08);
+  --shadow-lg: 0 16px 40px rgba(16, 24, 38, 0.16);
+
+  --container-max: 1240px;
+}
