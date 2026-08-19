@@ -14,6 +14,20 @@ export default function Hero() {
 
   return (
     <header className="hero">
+      <div className="hero-decor" aria-hidden="true">
+        <svg viewBox="0 0 420 560" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroShard" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stopColor="#33ADE4" />
+              <stop offset="1" stopColor="#0B3A59" />
+            </linearGradient>
+          </defs>
+          <polygon points="60,20 190,20 300,300 220,560 130,340" fill="url(#heroShard)" opacity="0.22" />
+          <polygon points="230,40 270,40 340,220 300,560 260,380" fill="url(#heroShard)" opacity="0.14" />
+          <circle cx="365" cy="70" r="15" fill="#E32236" opacity="0.55" />
+        </svg>
+      </div>
+
       <div className="container-app">
         <motion.span
           className="hero-eyebrow"
